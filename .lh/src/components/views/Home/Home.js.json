@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/views/Home/Home.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1632495453489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1632495486889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,14 @@\n import React, { Component } from \"react\";\n import Header from \"../header/Header\";\n+import Home from \"../conntent/Home\";\n \n export default class Home extends Component {\n   render() {\n     return (\n       <div>\n         <Header />\n+        <Home />\n       </div>\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1632495545846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n import React, { Component } from \"react\";\n+import Content from \"../conntent/Content\";\n import Header from \"../header/Header\";\n-import Home from \"../conntent/Home\";\n \n export default class Home extends Component {\n   render() {\n     return (\n       <div>\n         <Header />\n-        <Home />\n+        <Content />\n       </div>\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1632582860324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,16 @@\n import React, { Component } from \"react\";\n import Content from \"../conntent/Content\";\n import Header from \"../header/Header\";\n+import Footer from \"../footer/Footer\";\n \n export default class Home extends Component {\n   render() {\n     return (\n       <div>\n         <Header />\n         <Content />\n+        <Footer />\n       </div>\n     );\n   }\n }\n"
+                }
+            ],
+            "date": 1632495453489,
+            "name": "Commit-0",
+            "content": "import React, { Component } from \"react\";\nimport Header from \"../header/Header\";\n\nexport default class Home extends Component {\n  render() {\n    return (\n      <div>\n        <Header />\n      </div>\n    );\n  }\n}\n"
+        }
+    ]
+}

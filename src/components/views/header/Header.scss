@@ -1,0 +1,188 @@
+@import "../../utils/home";
+.header {
+    min-height:250px;
+    z-index: 9999;
+    width: 100%;
+    padding-bottom: 40px;
+   
+  &__wrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__container{
+    .marquee{
+      background-color: #000;
+      marquee{
+      
+        color:white;
+         width: 100%;
+         height: 100%;
+         // margin: 0;
+         line-height: 36px;
+         // text-align: center;
+         
+         a{
+     
+           margin-left: 15px;
+           color:$color-main  !important;
+           text-decoration: none;
+           
+         }
+   
+   
+   
+   }
+    }
+  
+  }
+  &__container.isDisplayHeader{
+    position: fixed;
+   
+    background-color:#1b1a18;
+    width: 100%;
+    top:0;
+    animation: slideDown .5s linear;
+
+  }
+  @keyframes slideDown {
+    0%{
+      transform: translateY(-100%);
+    } 100%{
+      transform: translateY(0%);
+    }
+    
+  }
+
+
+  &__left{ 
+    display: flex;
+   }
+  &__logo-img{
+      display: block;
+      width: 170px;
+      height: auto;
+      cursor:pointer;
+
+
+   }
+  &__logo-label{ }
+  &__center{ }
+  &__menu{ 
+
+  }
+  &__menu--list{ 
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    
+  }
+  &__menu--item{ 
+    position: relative;
+    padding: 10px 0;
+    margin: 0 10px;
+  
+
+    &:hover{
+      color:$color-main ;
+    }
+    .menu {
+      &__sub{
+        position: absolute;
+        background-color: #000;
+        height: fit-content;
+        list-style: none;
+       
+        width: 110%;
+        padding:10px;
+        padding-bottom:20px;
+        left:15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s linear;
+        transform: translateY(0);
+
+
+       }
+      &__sub--item{
+
+       }
+      &__sub--link{ 
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 35px;
+        &:hover{
+          color:$color-main
+        }
+         }
+    }
+    &:hover .menu__sub{
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(5px);
+    }
+
+  }
+  &__menu--link{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    text-decoration: none;
+    &:hover{
+      color: $color-main;
+    }
+   }
+   &__right{
+      margin-right: 20px;
+    }
+   &__login--btn{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    background-color: $color-main ;
+    outline: none;
+    color:white;
+    text-transform:uppercase;
+    border: none;
+    border-radius: 50px;
+    margin: 0 4px ;
+    font-weight:700;
+    font-size: 14px;
+    box-shadow: 0 0 51px -7px rgb(255, 185, 22);
+    border: 1px solid $color-main  ;
+    transition: .3s linear;
+    &:hover{
+      background-color: #000000;
+      color:$color-main ;
+      cursor: pointer;
+    }
+  }
+    &__brand {
+      h1{
+
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: 700;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $color-main ;
+        color: transparent;
+      padding-top: 20px;
+        margin-bottom: 25px;
+      }
+      p{
+        line-height: 25px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        color:#eeeeee
+      }
+    }
+
+}

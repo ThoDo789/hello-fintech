@@ -1,0 +1,254 @@
+{
+    "sourceFile": "src/components/views/footer/Footer.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 59,
+            "patches": [
+                {
+                    "date": 1632582076404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1632582135637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,16 +42,27 @@\n       margin: 0 0 30px;\n       text-transform: capitalize;\n     }\n    }\n-  &__item{ }\n+   &__list:last-child{\n+     display:flex;\n+     align-items:center;\n+     justify-content:flex-end;\n+     flex-direction:column;;\n+   }\n+  &__item{ \n+\n+  }\n   &__link{ \n   font-size: 16px;\n   line-height: 26px;\n-  \n \n+\n   }\n-  &__contacts{ }\n+  &__contacts{ \n+\n+\n+  }\n   &__btn-subscribe{ }\n   &__socials{ }\n   &__icon{ }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632582299088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,11 @@\n   &__wrapper{ \n     width: 1200px;\n     padding: 70px 0;\n     border-bottom: 1px solid rgba(255, 255, 255, .15);\n+    display: flex;\n+    justify-content: space-between;\n+    align-items: center;\n   }\n   &__logo{\n     display: flex;\n     justify-content: center;\n@@ -46,9 +49,10 @@\n    &__list:last-child{\n      display:flex;\n      align-items:center;\n      justify-content:flex-end;\n-     flex-direction:column;;\n+     flex-direction:column;\n+     padding-left: 30px;\n    }\n   &__item{ \n \n   }\n"
+                },
+                {
+                    "date": 1632582397365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,13 +59,22 @@\n   &__link{ \n   font-size: 16px;\n   line-height: 26px;\n \n-\n   }\n   &__contacts{ \n+    \n+display:flex;\n+align-items:center;\n+justify-content:center;\n+flex-direction:column;\n+h4{\n+  margin:\n+0px 0px 30px\n+padding:\n+0px\n+}\n \n-\n   }\n   &__btn-subscribe{ }\n   &__socials{ }\n   &__icon{ }\n"
+                },
+                {
+                    "date": 1632582409190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,11 +68,11 @@\n justify-content:center;\n flex-direction:column;\n h4{\n   margin:\n-0px 0px 30px\n+0px 0px 30px;\n padding:\n-0px\n+0px;\n }\n \n   }\n   &__btn-subscribe{ }\n"
+                },
+                {
+                    "date": 1632582750981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,11 @@\n   }\n   &__link{ \n   font-size: 16px;\n   line-height: 26px;\n+  text-decoration: none;\n+  text-transform: capitalize;\n+  color:#eeeeee;\n \n   }\n   &__contacts{ \n     \n@@ -67,15 +70,28 @@\n align-items:center;\n justify-content:center;\n flex-direction:column;\n h4{\n-  margin:\n-0px 0px 30px;\n-padding:\n-0px;\n+  margin:0px 0px 30px;\n+padding:0px;\n+font-weight: 500;\n+line-height: 28;\n+font-size: 20px;\n+\n }\n \n   }\n-  &__btn-subscribe{ }\n+  &__btn-subscribe{ \n+\n+    color: #fff !important;\n+    font-weight: 700;\n+    padding: 12px 35px;\n+    box-shadow: 0px 0px 30px 3px rgba(248,177,25,.4);\n+    display: inline-block;\n+    background-color: $color-main;\n+    border-radius: 50px;\n+    text-transform: uppercase;\n+    \n+  }\n   &__socials{ }\n   &__icon{ }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632582826631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,10 +87,15 @@\n     padding: 12px 35px;\n     box-shadow: 0px 0px 30px 3px rgba(248,177,25,.4);\n     display: inline-block;\n     background-color: $color-main;\n+    border: 1px solid $color-main;\n     border-radius: 50px;\n     text-transform: uppercase;\n+    transition: .3s linear;\n+&:hover{\n+  background-color: #0000;\n+}\n     \n   }\n   &__socials{ }\n   &__icon{ }\n"
+                },
+                {
+                    "date": 1632582950590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+@import '../../utils/home'\n+\n .footer {\n   position: relative;\n   z-index: 10;\n   background-color: #1b1a18;\n"
+                },
+                {
+                    "date": 1632583002424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import '../../utils/home'\n+@import '../../utils/home';\n \n .footer {\n   position: relative;\n   z-index: 10;\n@@ -9,9 +9,8 @@\n     padding: 70px 0;\n     border-bottom: 1px solid rgba(255, 255, 255, .15);\n     display: flex;\n     justify-content: space-between;\n-    align-items: center;\n   }\n   &__logo{\n     display: flex;\n     justify-content: center;\n"
+                },
+                {
+                    "date": 1632583022841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n   &__logo{\n     display: flex;\n     justify-content: center;\n     align-items: center;\n+    flex-direction: column;\n    }\n   &__logo--img{ \n     height: 60px;\n     object-fit: cover;\n"
+                },
+                {
+                    "date": 1632583041129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     justify-content: space-between;\n   }\n   &__logo{\n     display: flex;\n-    justify-content: center;\n+    justify-content: flex-start;\n     align-items: center;\n     flex-direction: column;\n    }\n   &__logo--img{ \n"
+                },
+                {
+                    "date": 1632583063934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,12 @@\n .footer {\n   position: relative;\n   z-index: 10;\n   background-color: #1b1a18;\n+  display:flex;\n+  align-items:center;\n+  justify-content:center;\n+  flex-direction:column;\n   &__wrapper{ \n     width: 1200px;\n     padding: 70px 0;\n     border-bottom: 1px solid rgba(255, 255, 255, .15);\n"
+                },
+                {
+                    "date": 1632583090218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n   }\n   &__logo{\n     display: flex;\n     justify-content: flex-start;\n-    align-items: center;\n     flex-direction: column;\n    }\n   &__logo--img{ \n     height: 60px;\n"
+                },
+                {
+                    "date": 1632583098663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n   }\n   &__logo{\n     display: flex;\n     justify-content: flex-start;\n+    align-items: center;\n     flex-direction: column;\n    }\n   &__logo--img{ \n     height: 60px;\n"
+                },
+                {
+                    "date": 1632583140477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   background-color: #1b1a18;\n   display:flex;\n   align-items:center;\n   justify-content:center;\n-  flex-direction:column;\n+\n   &__wrapper{ \n     width: 1200px;\n     padding: 70px 0;\n     border-bottom: 1px solid rgba(255, 255, 255, .15);\n"
+                },
+                {
+                    "date": 1632583174491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   position: relative;\n   z-index: 10;\n   background-color: #1b1a18;\n   display:flex;\n-  align-items:center;\n+\n   justify-content:center;\n \n   &__wrapper{ \n     width: 1200px;\n"
+                },
+                {
+                    "date": 1632583235198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,8 @@\n \n   }\n   &__links{\n     display:flex;\n-    align-items:center;\n     justify-content:center;\n     color:#fff\n    }\n   &__list--links{\n"
+                },
+                {
+                    "date": 1632583280933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,12 +70,9 @@\n \n   }\n   &__contacts{ \n     \n-display:flex;\n-align-items:center;\n-justify-content:center;\n-flex-direction:column;\n+\n h4{\n   margin:0px 0px 30px;\n padding:0px;\n font-weight: 500;\n"
+                },
+                {
+                    "date": 1632583350528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,17 @@\n   background-color: #1b1a18;\n   display:flex;\n \n   justify-content:center;\n+  padding:15px;\n \n   &__wrapper{ \n     width: 1200px;\n     padding: 70px 0;\n     border-bottom: 1px solid rgba(255, 255, 255, .15);\n     display: flex;\n     justify-content: space-between;\n+\n   }\n   &__logo{\n     display: flex;\n     justify-content: flex-start;\n"
+                },
+                {
+                    "date": 1632583426389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n h4{\n   margin:0px 0px 30px;\n padding:0px;\n font-weight: 500;\n-line-height: 28;\n+line-height: 28px;\n font-size: 20px;\n \n }\n \n"
+                },
+                {
+                    "date": 1632583557870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,14 +23,17 @@\n     align-items: center;\n     flex-direction: column;\n    }\n   &__logo--img{ \n+    display: block;\n     height: 60px;\n     object-fit: cover;\n     width: auto;\n     margin-bottom: 45px;\n   }\n   &__img--brand{ \n+    display: block;\n+\n     height: 130px;\n     width: auto;\n     object-fit: cover;\n \n"
+                },
+                {
+                    "date": 1632583604510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n \n   }\n   &__logo{\n     display: flex;\n-    justify-content: flex-start;\n-    align-items: center;\n+    justify-content: center;\n+    align-items: flex-start;\n     flex-direction: column;\n    }\n   &__logo--img{ \n     display: block;\n"
+                },
+                {
+                    "date": 1632583718496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n     display: flex;\n     justify-content: center;\n     align-items: flex-start;\n     flex-direction: column;\n+    margin-left: 65px;\n    }\n   &__logo--img{ \n     display: block;\n     height: 60px;\n"
+                },
+                {
+                    "date": 1632583734045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n \n   }\n   &__links{\n     display:flex;\n-    justify-content:center;\n+    justify-content:space-between;\n     color:#fff\n    }\n   &__list--links{\n     \n"
+                },
+                {
+                    "date": 1632583760888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     display: flex;\n     justify-content: center;\n     align-items: flex-start;\n     flex-direction: column;\n-    margin-left: 65px;\n+    margin-right: 65px;\n    }\n   &__logo--img{ \n     display: block;\n     height: 60px;\n"
+                },
+                {
+                    "date": 1632583802935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,9 @@\n   line-height: 26px;\n   text-decoration: none;\n   text-transform: capitalize;\n   color:#eeeeee;\n+  text-align: left;\n \n   }\n   &__contacts{ \n     \n"
+                },
+                {
+                    "date": 1632583854166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n    }\n   &__list{\n     list-style: none;\n     padding:  0 15px;\n+    text-align: left;\n \n     h4{\n       font-size: 20px;\n       margin: 0 0 30px;\n"
+                },
+                {
+                    "date": 1632584064071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,8 @@\n     }\n    }\n    &__list:last-child{\n      display:flex;\n-     align-items:center;\n      justify-content:flex-end;\n      flex-direction:column;\n      padding-left: 30px;\n    }\n"
+                },
+                {
+                    "date": 1632584092758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n      flex-direction:column;\n      padding-left: 30px;\n    }\n   &__item{ \n-\n+    width: 100%;\n   }\n   &__link{ \n   font-size: 16px;\n   line-height: 26px;\n"
+                },
+                {
+                    "date": 1632584132524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n    &__list:last-child{\n      display:flex;\n      justify-content:flex-end;\n      flex-direction:column;\n-     padding-left: 30px;\n+    \n    }\n   &__item{ \n     width: 100%;\n   }\n"
+                },
+                {
+                    "date": 1632584195286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n       margin: 0 0 30px;\n       text-transform: capitalize;\n     }\n    }\n-   &__list:last-child{\n+   &link__lists:last-child{\n      display:flex;\n      justify-content:flex-end;\n      flex-direction:column;\n     \n"
+                },
+                {
+                    "date": 1632584217222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n    &link__lists:last-child{\n      display:flex;\n      justify-content:flex-end;\n      flex-direction:column;\n+     margin-left: 30px;\n     \n    }\n   &__item{ \n     width: 100%;\n"
+                },
+                {
+                    "date": 1632584227146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n       margin: 0 0 30px;\n       text-transform: capitalize;\n     }\n    }\n-   &link__lists:last-child{\n+   link__lists:last-child{\n      display:flex;\n      justify-content:flex-end;\n      flex-direction:column;\n      margin-left: 30px;\n"
+                },
+                {
+                    "date": 1632584235094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n       margin: 0 0 30px;\n       text-transform: capitalize;\n     }\n    }\n-   link__lists:last-child{\n+   &__link__lists:last-child{\n      display:flex;\n      justify-content:flex-end;\n      flex-direction:column;\n      margin-left: 30px;\n"
+                },
+                {
+                    "date": 1632584274994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n       margin: 0 0 30px;\n       text-transform: capitalize;\n     }\n    }\n-   &__link__lists:last-child{\n+   &__link--lists:last-child{\n      display:flex;\n      justify-content:flex-end;\n      flex-direction:column;\n      margin-left: 30px;\n"
+                },
+                {
+                    "date": 1632584291117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n       margin: 0 0 30px;\n       text-transform: capitalize;\n     }\n    }\n-   &__link--lists:last-child{\n+   &__list--links:last-child{\n      display:flex;\n      justify-content:flex-end;\n      flex-direction:column;\n      margin-left: 30px;\n"
+                },
+                {
+                    "date": 1632584305460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,8 @@\n     }\n    }\n    &__list--links:last-child{\n      display:flex;\n-     justify-content:flex-end;\n      flex-direction:column;\n      margin-left: 30px;\n     \n    }\n"
+                },
+                {
+                    "date": 1632584368778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,13 @@\n     }\n    }\n    &__list--links:last-child{\n      display:flex;\n+     \n      flex-direction:column;\n+\n      margin-left: 30px;\n+     \n     \n    }\n   &__item{ \n     width: 100%;\n@@ -76,9 +79,9 @@\n   text-align: left;\n \n   }\n   &__contacts{ \n-    \n+    flex-flow: ;\n \n h4{\n   margin:0px 0px 30px;\n padding:0px;\n"
+                },
+                {
+                    "date": 1632584379251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,12 @@\n   text-align: left;\n \n   }\n   &__contacts{ \n-    flex-flow: ;\n+    display:flex;\n+    align-items:center;\n+    justify-content:center;\n+    flex-direction:column;\n \n h4{\n   margin:0px 0px 30px;\n padding:0px;\n"
+                },
+                {
+                    "date": 1632584628055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,10 @@\n     justify-content: center;\n     align-items: flex-start;\n     flex-direction: column;\n     margin-right: 65px;\n+    flex: 0 0 0 25%;\n+    max-width: 25%;\n    }\n   &__logo--img{ \n     display: block;\n     height: 60px;\n"
+                },
+                {
+                    "date": 1632584650655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     justify-content: center;\n     align-items: flex-start;\n     flex-direction: column;\n     margin-right: 65px;\n-    flex: 0 0 0 25%;\n+    flex: 0 0  25%;\n     max-width: 25%;\n    }\n   &__logo--img{ \n     display: block;\n"
+                },
+                {
+                    "date": 1632584673361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n     display: flex;\n     justify-content: center;\n     align-items: flex-start;\n     flex-direction: column;\n-    margin-right: 65px;\n     flex: 0 0  25%;\n     max-width: 25%;\n    }\n   &__logo--img{ \n"
+                },
+                {
+                    "date": 1632584939666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,14 +39,12 @@\n     width: auto;\n     object-fit: cover;\n \n   }\n-  &__links{\n-    display:flex;\n-    justify-content:space-between;\n-    color:#fff\n-   }\n+ \n   &__list--links{\n+    flex:  0 0 16.66666%;\n+    max-width: 16.66666%;\n     \n    }\n   &__list{\n     list-style: none;\n"
+                },
+                {
+                    "date": 1632585133835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n     display: flex;\n     justify-content: center;\n     align-items: flex-start;\n     flex-direction: column;\n-    flex: 0 0  25%;\n-    max-width: 25%;\n+    flex: 0 0  33.33333%;\n+    max-width: 33.33333%;\n    }\n   &__logo--img{ \n     display: block;\n     height: 60px;\n@@ -82,8 +82,10 @@\n     display:flex;\n     align-items:center;\n     justify-content:center;\n     flex-direction:column;\n+    flex: 0 0 25%;\n+    max-width: 25%;\n \n h4{\n   margin:0px 0px 30px;\n padding:0px;\n"
+                },
+                {
+                    "date": 1632585159973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n   }\n   &__contacts{ \n     display:flex;\n     align-items:center;\n-    justify-content:center;\n+    justify-content:cer;\n     flex-direction:column;\n     flex: 0 0 25%;\n     max-width: 25%;\n \n"
+                },
+                {
+                    "date": 1632585165389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,8 @@\n   }\n   &__contacts{ \n     display:flex;\n     align-items:center;\n-    justify-content:cer;\n     flex-direction:column;\n     flex: 0 0 25%;\n     max-width: 25%;\n \n"
+                },
+                {
+                    "date": 1632585215396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,12 @@\n  \n   &__list--links{\n     flex:  0 0 16.66666%;\n     max-width: 16.66666%;\n+    display:flex;\n+    align-items:center;\n+    justify-content:flex-end;\n+    flex-direction:column;\n     \n    }\n   &__list{\n     list-style: none;\n"
+                },
+                {
+                    "date": 1632585243490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,12 +43,9 @@\n  \n   &__list--links{\n     flex:  0 0 16.66666%;\n     max-width: 16.66666%;\n-    display:flex;\n-    align-items:center;\n-    justify-content:flex-end;\n-    flex-direction:column;\n+   \n     \n    }\n   &__list{\n     list-style: none;\n@@ -64,9 +61,9 @@\n    &__list--links:last-child{\n      display:flex;\n      \n      flex-direction:column;\n-\n+      justify-content: flex-end;\n      margin-left: 30px;\n      \n     \n    }\n"
+                },
+                {
+                    "date": 1632585379608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,12 +58,9 @@\n       text-transform: capitalize;\n     }\n    }\n    &__list--links:last-child{\n-     display:flex;\n      \n-     flex-direction:column;\n-      justify-content: flex-end;\n      margin-left: 30px;\n      \n     \n    }\n"
+                },
+                {
+                    "date": 1632585410591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n       text-transform: capitalize;\n     }\n    }\n    &__list--links:last-child{\n-     \n+     margin-top: 50px;\n      margin-left: 30px;\n      \n     \n    }\n"
+                },
+                {
+                    "date": 1632585492884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n     width: 100%;\n   }\n   &__link{ \n   font-size: 16px;\n-  line-height: 26px;\n+  line-height: 40px;\n   text-decoration: none;\n   text-transform: capitalize;\n   color:#eeeeee;\n   text-align: left;\n@@ -88,8 +88,9 @@\n padding:0px;\n font-weight: 500;\n line-height: 28px;\n font-size: 20px;\n+color: #fff;\n \n }\n \n   }\n"
+                },
+                {
+                    "date": 1632585542104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n     h4{\n       font-size: 20px;\n       margin: 0 0 30px;\n       text-transform: capitalize;\n+      color: #fff;\n     }\n    }\n    &__list--links:last-child{\n      margin-top: 50px;\n@@ -105,8 +106,9 @@\n     border: 1px solid $color-main;\n     border-radius: 50px;\n     text-transform: uppercase;\n     transition: .3s linear;\n+    text-decoration: none;\n &:hover{\n   background-color: #0000;\n }\n     \n"
+                },
+                {
+                    "date": 1632585604870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n       text-transform: capitalize;\n       color: #fff;\n     }\n    }\n-   &__list--links:last-child{\n+   &__list--links:nth-child(2){\n      margin-top: 50px;\n      margin-left: 30px;\n      \n     \n"
+                },
+                {
+                    "date": 1632585614866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n       text-transform: capitalize;\n       color: #fff;\n     }\n    }\n-   &__list--links:nth-child(2){\n+   &__list--links:nth-child(3){\n      margin-top: 50px;\n      margin-left: 30px;\n      \n     \n"
+                },
+                {
+                    "date": 1632585684308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,9 @@\n   text-align: left;\n \n   }\n   &__contacts{ \n+    padding: 0 15px;\n     display:flex;\n     align-items:center;\n     flex-direction:column;\n     flex: 0 0 25%;\n"
+                },
+                {
+                    "date": 1632585975446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,7 +113,25 @@\n   background-color: #0000;\n }\n     \n   }\n-  &__socials{ }\n-  &__icon{ }\n+  &__socials{\n+    display: flex;\n+    justify-content: center;\n+    align-items: center;\n+   }\n+  &__icon{\n+    color: #ffff;\n+    font-size: 14px;\n+    text-decoration: none;\n+    display: block;\n+    height: 40px;\n+    width:40px;\n+    display: flex;\n+    justify-content: center;\n+    align-items: center;\n+    border-radius: 50%;\n+    border:  1px solid #fff;\n+    \n+\n+   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632586047006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,9 @@\n     border-radius: 50px;\n     text-transform: uppercase;\n     transition: .3s linear;\n     text-decoration: none;\n+    margin-bottom: 25px;\n &:hover{\n   background-color: #0000;\n }\n     \n"
+                },
+                {
+                    "date": 1632586157990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,8 +131,12 @@\n     justify-content: center;\n     align-items: center;\n     border-radius: 50%;\n     border:  1px solid #fff;\n-    \n+    margin-right: 5px;\n+    &:hover{\n+      background-color: $color-main;\n+      color: #000000;\n+    }\n \n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632586229388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,11 @@\n     \n    }\n   &__item{ \n     width: 100%;\n+    &:hover{\n+      color: $color-main;\n+    }\n   }\n   &__link{ \n   font-size: 16px;\n   line-height: 40px;\n@@ -75,8 +78,9 @@\n   text-transform: capitalize;\n   color:#eeeeee;\n   text-align: left;\n \n+\n   }\n   &__contacts{ \n     padding: 0 15px;\n     display:flex;\n"
+                },
+                {
+                    "date": 1632586275912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,21 +66,21 @@\n     \n    }\n   &__item{ \n     width: 100%;\n-    &:hover{\n-      color: $color-main;\n-    }\n+   \n   }\n   &__link{ \n   font-size: 16px;\n   line-height: 40px;\n   text-decoration: none;\n   text-transform: capitalize;\n   color:#eeeeee;\n   text-align: left;\n+  &:hover{\n+    color: $color-main;\n+  }\n \n-\n   }\n   &__contacts{ \n     padding: 0 15px;\n     display:flex;\n"
+                }
+            ],
+            "date": 1632582076404,
+            "name": "Commit-0",
+            "content": ".footer {\n  position: relative;\n  z-index: 10;\n  background-color: #1b1a18;\n  &__wrapper{ \n    width: 1200px;\n    padding: 70px 0;\n    border-bottom: 1px solid rgba(255, 255, 255, .15);\n  }\n  &__logo{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n   }\n  &__logo--img{ \n    height: 60px;\n    object-fit: cover;\n    width: auto;\n    margin-bottom: 45px;\n  }\n  &__img--brand{ \n    height: 130px;\n    width: auto;\n    object-fit: cover;\n\n  }\n  &__links{\n    display:flex;\n    align-items:center;\n    justify-content:center;\n    color:#fff\n   }\n  &__list--links{\n    \n   }\n  &__list{\n    list-style: none;\n    padding:  0 15px;\n\n    h4{\n      font-size: 20px;\n      margin: 0 0 30px;\n      text-transform: capitalize;\n    }\n   }\n  &__item{ }\n  &__link{ \n  font-size: 16px;\n  line-height: 26px;\n  \n\n  }\n  &__contacts{ }\n  &__btn-subscribe{ }\n  &__socials{ }\n  &__icon{ }\n}"
+        }
+    ]
+}

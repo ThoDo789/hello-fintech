@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/components/views/conntent/Content.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1632495545245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1632495643158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { Component } from \"react\";\n-import { images } from \"../../contansts/image\";\n+import images from \"../../contansts/image\";\n import \"./Home.scss\";\n export default class Content extends Component {\n   render() {\n     return (\n"
+                },
+                {
+                    "date": 1632495648347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { Component } from \"react\";\n-import images from \"../../contansts/image\";\n+import { images } from \"../../contansts/image\";\n import \"./Home.scss\";\n export default class Content extends Component {\n   render() {\n     return (\n"
+                },
+                {
+                    "date": 1632495760198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         </section>\n         <section className=\"body__list\">\n           <div className=\"body__item\">\n             <img\n-              src={images.ITEM_IMG_1}\n+              src={images.ITEM_1}\n               alt=\"image-item\"\n               className=\"body__item--img\"\n             />\n             <h4>AMPLIFY YOUR BRAND</h4>\n"
+                },
+                {
+                    "date": 1632495773941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,13 +11,9 @@\n           </a>\n         </section>\n         <section className=\"body__list\">\n           <div className=\"body__item\">\n-            <img\n-              src={images.ITEM_1}\n-              alt=\"image-item\"\n-              className=\"body__item--img\"\n-            />\n+            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n             <h4>AMPLIFY YOUR BRAND</h4>\n             <p>To reach new customers and markets</p>\n           </div>\n         </section>\n"
+                },
+                {
+                    "date": 1632495794860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import \"./Home.scss\";\n export default class Content extends Component {\n   render() {\n     return (\n-      <section class=\"container body\">\n+      <section className=\"container body\">\n         <section className=\"body__content\">\n           <a href=\"/\" className=\"content__btn\">\n             get stated today\n           </a>\n"
+                },
+                {
+                    "date": 1632496345772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,12 @@\n import \"./Home.scss\";\n export default class Content extends Component {\n   render() {\n     return (\n-      <section className=\"container body\">\n+      <section\n+        className=\"container body\"\n+        style={{ backgroundImage: `url(${images.BG})` }}\n+      >\n         <section className=\"body__content\">\n           <a href=\"/\" className=\"content__btn\">\n             get stated today\n           </a>\n"
+                },
+                {
+                    "date": 1632496507934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,13 @@\n         className=\"container body\"\n         style={{ backgroundImage: `url(${images.BG})` }}\n       >\n         <section className=\"body__content\">\n-          <a href=\"/\" className=\"content__btn\">\n-            get stated today\n-          </a>\n+          <div className=\"btn-wrapper\">\n+            <a href=\"/\" className=\"content__btn\">\n+              get stated today\n+            </a>\n+          </div>\n         </section>\n         <section className=\"body__list\">\n           <div className=\"body__item\">\n             <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n"
+                },
+                {
+                    "date": 1632496732241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,11 @@\n         className=\"container body\"\n         style={{ backgroundImage: `url(${images.BG})` }}\n       >\n         <section className=\"body__content\">\n-          <div className=\"btn-wrapper\">\n-            <a href=\"/\" className=\"content__btn\">\n-              get stated today\n-            </a>\n-          </div>\n+          <a href=\"/\" className=\"content__btn\">\n+            get stated today\n+          </a>\n         </section>\n         <section className=\"body__list\">\n           <div className=\"body__item\">\n             <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n"
+                },
+                {
+                    "date": 1632498032400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,28 @@\n             <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n             <h4>AMPLIFY YOUR BRAND</h4>\n             <p>To reach new customers and markets</p>\n           </div>\n+          <div className=\"body__item\">\n+            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+            <h4>AMPLIFY YOUR BRAND</h4>\n+            <p>To reach new customers and markets</p>\n+          </div>\n+          <div className=\"body__item\">\n+            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+            <h4>AMPLIFY YOUR BRAND</h4>\n+            <p>To reach new customers and markets</p>\n+          </div>\n+          <div className=\"body__item\">\n+            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+            <h4>AMPLIFY YOUR BRAND</h4>\n+            <p>To reach new customers and markets</p>\n+          </div>\n+          <div className=\"body__item\">\n+            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+            <h4>AMPLIFY YOUR BRAND</h4>\n+            <p>To reach new customers and markets</p>\n+          </div>\n         </section>\n       </section>\n     );\n   }\n"
+                },
+                {
+                    "date": 1632578868978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,44 +3,46 @@\n import \"./Home.scss\";\n export default class Content extends Component {\n   render() {\n     return (\n-      <section\n-        className=\"container body\"\n+      <div\n+        className=\"body-wrapper\"\n         style={{ backgroundImage: `url(${images.BG})` }}\n       >\n-        <section className=\"body__content\">\n-          <a href=\"/\" className=\"content__btn\">\n-            get stated today\n-          </a>\n-        </section>\n-        <section className=\"body__list\">\n-          <div className=\"body__item\">\n-            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n-            <h4>AMPLIFY YOUR BRAND</h4>\n-            <p>To reach new customers and markets</p>\n-          </div>\n-          <div className=\"body__item\">\n-            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n-            <h4>AMPLIFY YOUR BRAND</h4>\n-            <p>To reach new customers and markets</p>\n-          </div>\n-          <div className=\"body__item\">\n-            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n-            <h4>AMPLIFY YOUR BRAND</h4>\n-            <p>To reach new customers and markets</p>\n-          </div>\n-          <div className=\"body__item\">\n-            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n-            <h4>AMPLIFY YOUR BRAND</h4>\n-            <p>To reach new customers and markets</p>\n-          </div>\n-          <div className=\"body__item\">\n-            <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n-            <h4>AMPLIFY YOUR BRAND</h4>\n-            <p>To reach new customers and markets</p>\n-          </div>\n-        </section>\n-      </section>\n+        <div className=\"container body\">\n+          <section className=\"body__content\">\n+            <a href=\"/\" className=\"content__btn\">\n+              get stated today\n+            </a>\n+          </section>\n+          <section className=\"body__list\">\n+            <div className=\"body__item\">\n+              <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+              <h4>AMPLIFY YOUR BRAND</h4>\n+              <p>To reach new customers and markets</p>\n+            </div>\n+            <div className=\"body__item\">\n+              <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+              <h4>AMPLIFY YOUR BRAND</h4>\n+              <p>To reach new customers and markets</p>\n+            </div>\n+            <div className=\"body__item\">\n+              <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+              <h4>AMPLIFY YOUR BRAND</h4>\n+              <p>To reach new customers and markets</p>\n+            </div>\n+            <div className=\"body__item\">\n+              <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+              <h4>AMPLIFY YOUR BRAND</h4>\n+              <p>To reach new customers and markets</p>\n+            </div>\n+            <div className=\"body__item\">\n+              <img src={images.ITEM_1} alt=\"jjjj\" className=\"body__item--img\" />\n+              <h4>AMPLIFY YOUR BRAND</h4>\n+              <p>To reach new customers and markets</p>\n+            </div>\n+          </section>\n+        </div>\n+      </div>\n     );\n   }\n }\n"
+                }
+            ],
+            "date": 1632495545244,
+            "name": "Commit-0",
+            "content": "import React, { Component } from \"react\";\nimport { images } from \"../../contansts/image\";\nimport \"./Home.scss\";\nexport default class Content extends Component {\n  render() {\n    return (\n      <section class=\"container body\">\n        <section className=\"body__content\">\n          <a href=\"/\" className=\"content__btn\">\n            get stated today\n          </a>\n        </section>\n        <section className=\"body__list\">\n          <div className=\"body__item\">\n            <img\n              src={images.ITEM_IMG_1}\n              alt=\"image-item\"\n              className=\"body__item--img\"\n            />\n            <h4>AMPLIFY YOUR BRAND</h4>\n            <p>To reach new customers and markets</p>\n          </div>\n        </section>\n      </section>\n    );\n  }\n}\n"
+        }
+    ]
+}

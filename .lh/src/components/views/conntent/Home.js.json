@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/views/conntent/Home.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1632495415764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1632495415760,
+            "name": "Commit-0",
+            "content": "import React, { Component } from \"react\";\nimport { images } from \"../../contansts/image\";\nimport \"./Home.scss\";\nexport default class Home extends Component {\n  render() {\n    return (\n      <section class=\"container body\">\n        <section className=\"body__content\">\n          <a href=\"/\" className=\"content__btn\">\n            get stated today\n          </a>\n        </section>\n        <section className=\"body__list\">\n          <div className=\"body__item\">\n            <img\n              src={images.ITEM_IMG_1}\n              alt=\"image-item\"\n              className=\"body__item--img\"\n            />\n            <h4>AMPLIFY YOUR BRAND</h4>\n            <p>To reach new customers and markets</p>\n          </div>\n        </section>\n      </section>\n    );\n  }\n}\n"
+        }
+    ]
+}

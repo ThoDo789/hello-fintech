@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/utils/_astract.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1632492583678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1632492992284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,12 @@\n @keyframes transferText {\n-      0%{\n-        left: 0;\n-      }\n-      100%{\n-        left: -100%;\n-      }\n+  0% {\n+    -moz-transform: translateX(100%);\n+    -webkit-transform: translateX(100%);\n+    transform: translateX(100%);\n+}\n+100% {\n+    -moz-transform: translateX(-100%);\n+    -webkit-transform: translateX(-100%);\n+    transform: translateX(-100%);\n+}\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632493364604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@keyframes transferText {\n+@keyframes scroll-left {\n   0% {\n     -moz-transform: translateX(100%);\n     -webkit-transform: translateX(100%);\n     transform: translateX(100%);\n"
+                }
+            ],
+            "date": 1632492583678,
+            "name": "Commit-0",
+            "content": "@keyframes transferText {\n      0%{\n        left: 0;\n      }\n      100%{\n        left: -100%;\n      }\n}"
+        }
+    ]
+}

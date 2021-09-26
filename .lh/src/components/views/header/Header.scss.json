@@ -1,0 +1,566 @@
+{
+    "sourceFile": "src/components/views/header/Header.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 137,
+            "patches": [
+                {
+                    "date": 1632409261975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1632409320123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n .header {\n     display: flex;\n-   justify-content:space-betweet;\n-  align-item: center;\n-\n+   justify-content:space-between;\n+    align-items: center;\n+    padding:0 30px; \n   &__left{ \n     \n     }\n   &__logo-img{ }\n"
+                },
+                {
+                    "date": 1632409471276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,15 +2,28 @@\n     display: flex;\n    justify-content:space-between;\n     align-items: center;\n     padding:0 30px; \n+    background-color: aquamarine;\n+    \n   &__left{ \n-    \n+    display: flex;\n     }\n   &__logo-img{ }\n   &__logo-label{ }\n   &__right{ }\n-  &__menu{ }\n-  &__menu--list{ }\n-  &__menu--item{ }\n-  &__menu--link{ }\n+  &__menu{ \n+\n+  }\n+  &__menu--list{ \n+    display:flex;\n+    justify-content: center;\n+    \n+  }\n+  &__menu--item{ \n+    padding: 10px 0;\n+\n+  }\n+  &__menu--link{\n+    \n+   }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632409567360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     background-color: aquamarine;\n     \n   &__left{ \n     display: flex;\n-    }\n+   }\n   &__logo-img{ }\n   &__logo-label{ }\n   &__right{ }\n   &__menu{ \n@@ -20,8 +20,9 @@\n     \n   }\n   &__menu--item{ \n     padding: 10px 0;\n+    margin: 0 20px;\n \n   }\n   &__menu--link{\n     \n"
+                },
+                {
+                    "date": 1632409575302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n     margin: 0 20px;\n \n   }\n   &__menu--link{\n-    \n+    color: black;\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632409585965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n   }\n   &__menu--list{ \n     display:flex;\n     justify-content: center;\n+    list-style: none;\n     \n   }\n   &__menu--item{ \n     padding: 10px 0;\n"
+                },
+                {
+                    "date": 1632409611309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,8 @@\n \n   }\n   &__menu--link{\n     color: black;\n+    text-decoration: none;\n+    text-transform: uppercase;\n    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632409663168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\n .header {\n     display: flex;\n    justify-content:space-between;\n     align-items: center;\n"
+                },
+                {
+                    "date": 1632409771372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n    justify-content:space-between;\n     align-items: center;\n     padding:0 30px; \n     background-color: aquamarine;\n+    height: 80px;\n     \n   &__left{ \n     display: flex;\n    }\n"
+                },
+                {
+                    "date": 1632409791738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,12 @@\n     align-items: center;\n     padding:0 30px; \n     background-color: aquamarine;\n     height: 80px;\n+    position: fixed;\n+    z-index: 9999;\n     \n+    \n   &__left{ \n     display: flex;\n    }\n   &__logo-img{ }\n"
+                },
+                {
+                    "date": 1632409813838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n     background-color: aquamarine;\n     height: 80px;\n     position: fixed;\n     z-index: 9999;\n+    width: 100%;\n     \n-    \n   &__left{ \n     display: flex;\n    }\n   &__logo-img{ }\n"
+                },
+                {
+                    "date": 1632479235145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n .header {\n     display: flex;\n-   justify-content:space-between;\n+    justify-content:space-between;\n     align-items: center;\n     padding:0 30px; \n     background-color: aquamarine;\n     height: 80px;\n@@ -14,9 +14,9 @@\n     display: flex;\n    }\n   &__logo-img{ }\n   &__logo-label{ }\n-  &__right{ }\n+  &__center{ }\n   &__menu{ \n \n   }\n   &__menu--list{ \n"
+                },
+                {
+                    "date": 1632479440016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     display: flex;\n     justify-content:space-between;\n     align-items: center;\n     padding:0 30px; \n-    background-color: aquamarine;\n+\n     height: 80px;\n     position: fixed;\n     z-index: 9999;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1632479537410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     justify-content:space-between;\n     align-items: center;\n     padding:0 30px; \n \n-    height: 80px;\n+    height: 245px;\n     position: fixed;\n     z-index: 9999;\n     width: 100%;\n     \n"
+                },
+                {
+                    "date": 1632479603108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n     height: 245px;\n     position: fixed;\n     z-index: 9999;\n     width: 100%;\n+    background-size: cover;\n+    background-repeat: no-repeat;\n     \n   &__left{ \n     display: flex;\n    }\n"
+                },
+                {
+                    "date": 1632479642585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,15 @@\n     \n   &__left{ \n     display: flex;\n    }\n-  &__logo-img{ }\n+  &__logo-img{\n+      display: block;\n+      width: 170px;\n+      height: auto;\n+      \n+\n+   }\n   &__logo-label{ }\n   &__center{ }\n   &__menu{ \n \n"
+                },
+                {
+                    "date": 1632479775411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,18 +10,20 @@\n     z-index: 9999;\n     width: 100%;\n     background-size: cover;\n     background-repeat: no-repeat;\n+  &__wrapper{\n     \n+  }\n   &__left{ \n     display: flex;\n    }\n   &__logo-img{\n       display: block;\n       width: 170px;\n       height: auto;\n-      \n \n+\n    }\n   &__logo-label{ }\n   &__center{ }\n   &__menu{ \n"
+                },
+                {
+                    "date": 1632479797636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n \n .header {\n-    display: flex;\n-    justify-content:space-between;\n-    align-items: center;\n+   \n+   \n     padding:0 30px; \n \n     height: 245px;\n     position: fixed;\n@@ -11,9 +10,11 @@\n     width: 100%;\n     background-size: cover;\n     background-repeat: no-repeat;\n   &__wrapper{\n-    \n+    display: flex;\n+    justify-content:space-evenly;\n+    align-items: center;\n   }\n   &__left{ \n     display: flex;\n    }\n"
+                },
+                {
+                    "date": 1632479863055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n   &__wrapper{\n     display: flex;\n     justify-content:space-evenly;\n     align-items: center;\n+    height: 100px;\n   }\n   &__left{ \n     display: flex;\n    }\n"
+                },
+                {
+                    "date": 1632479901555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     display: flex;\n     justify-content:space-evenly;\n     align-items: center;\n     height: 100px;\n+    border-bottom: 1px solid #ccc;\n   }\n   &__left{ \n     display: flex;\n    }\n"
+                },
+                {
+                    "date": 1632479922905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,6 @@\n \n .header {\n-   \n-   \n-    padding:0 30px; \n-\n     height: 245px;\n     position: fixed;\n     z-index: 9999;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1632489734686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,20 @@\n     margin: 0 20px;\n \n   }\n   &__menu--link{\n-    color: black;\n+    color: white;\n     text-decoration: none;\n     text-transform: uppercase;\n    }\n+   &__right{\n+      \n+      column-gap: 20px;\n+    }\n+   &__login--btn{\n+    padding: 10px 20px;\n+    background-color: yellow;\n+    outline: none;\n+    color:white;\n+    text-transform:uppercase;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632489777163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,6 +53,8 @@\n     background-color: yellow;\n     outline: none;\n     color:white;\n     text-transform:uppercase;\n+    border: none;\n+    border-radius: 50px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632489800502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     text-decoration: none;\n     text-transform: uppercase;\n    }\n    &__right{\n-      \n+      display: grid;\n       column-gap: 20px;\n     }\n    &__login--btn{\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1632489850870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n     text-transform: uppercase;\n    }\n    &__right{\n       display: grid;\n+       grid-template-columns: 2;\n       column-gap: 20px;\n     }\n    &__login--btn{\n     padding: 10px 20px;\n"
+                },
+                {
+                    "date": 1632489889089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,11 +44,9 @@\n     text-decoration: none;\n     text-transform: uppercase;\n    }\n    &__right{\n-      display: grid;\n-       grid-template-columns: 2;\n-      column-gap: 20px;\n+      \n     }\n    &__login--btn{\n     padding: 10px 20px;\n     background-color: yellow;\n@@ -56,6 +54,7 @@\n     color:white;\n     text-transform:uppercase;\n     border: none;\n     border-radius: 50px;\n+    margin: 4px 0;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632489902724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,7 +54,7 @@\n     color:white;\n     text-transform:uppercase;\n     border: none;\n     border-radius: 50px;\n-    margin: 4px 0;\n+    margin: 0 4px ;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632490113112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,10 @@\n    &__right{\n       \n     }\n    &__login--btn{\n-    padding: 10px 20px;\n+    padding:\n+    12px 15px;\n     background-color: yellow;\n     outline: none;\n     color:white;\n     text-transform:uppercase;\n"
+                },
+                {
+                    "date": 1632490430780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,11 +47,10 @@\n    &__right{\n       \n     }\n    &__login--btn{\n-    padding:\n-    12px 15px;\n-    background-color: yellow;\n+    padding:12px 15px;\n+    background-color: #ffbb16;\n     outline: none;\n     color:white;\n     text-transform:uppercase;\n     border: none;\n"
+                },
+                {
+                    "date": 1632490501269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,6 +55,7 @@\n     text-transform:uppercase;\n     border: none;\n     border-radius: 50px;\n     margin: 0 4px ;\n+    font-weight:700\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632490564455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,7 +55,8 @@\n     text-transform:uppercase;\n     border: none;\n     border-radius: 50px;\n     margin: 0 4px ;\n-    font-weight:700\n+    font-weight:700;\n+    font-size: 14px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632490773279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     background-size: cover;\n     background-repeat: no-repeat;\n   &__wrapper{\n     display: flex;\n-    justify-content:space-evenly;\n+    justify-content:center;\n     align-items: center;\n     height: 100px;\n     border-bottom: 1px solid #ccc;\n   }\n"
+                },
+                {
+                    "date": 1632490828913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     \n   }\n   &__menu--item{ \n     padding: 10px 0;\n-    margin: 0 20px;\n+    margin: 0 10px;\n \n   }\n   &__menu--link{\n     color: white;\n"
+                },
+                {
+                    "date": 1632490864983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     color:white;\n     text-transform:uppercase;\n     border: none;\n     border-radius: 50px;\n-    margin: 0 4px ;\n+    margin-right:20px; \n     font-weight:700;\n     font-size: 14px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632490892207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     text-decoration: none;\n     text-transform: uppercase;\n    }\n    &__right{\n-      \n+      margin-right: 20px;\n     }\n    &__login--btn{\n     padding:12px 15px;\n     background-color: #ffbb16;\n@@ -54,9 +54,9 @@\n     color:white;\n     text-transform:uppercase;\n     border: none;\n     border-radius: 50px;\n-    margin-right:20px; \n+    margin: 0 4px ;\n     font-weight:700;\n     font-size: 14px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632491147807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,5 +58,16 @@\n     margin: 0 4px ;\n     font-weight:700;\n     font-size: 14px;\n     }\n+    &__brand h1{\n+      font-size: 35px;\n+      line-height: 40px;\n+      font-weight: 700;\n+      text-align: center;\n+      -webkit-text-stroke-width: 1px;\n+      -webkit-text-stroke-color: #ffc853;\n+      color: transparent;\n+      margin-top: 25px;\n+      margin-left: 25px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632491153927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,7 +67,7 @@\n       -webkit-text-stroke-width: 1px;\n       -webkit-text-stroke-color: #ffc853;\n       color: transparent;\n       margin-top: 25px;\n-      margin-left: 25px;\n+      margin-bottom: 25px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632491362107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,16 +58,27 @@\n     margin: 0 4px ;\n     font-weight:700;\n     font-size: 14px;\n     }\n-    &__brand h1{\n-      font-size: 35px;\n-      line-height: 40px;\n-      font-weight: 700;\n-      text-align: center;\n-      -webkit-text-stroke-width: 1px;\n-      -webkit-text-stroke-color: #ffc853;\n-      color: transparent;\n-      margin-top: 25px;\n-      margin-bottom: 25px;\n+    &__brand {\n+      h1{\n+\n+        font-size: 35px;\n+        line-height: 40px;\n+        font-weight: 700;\n+        text-align: center;\n+        -webkit-text-stroke-width: 1px;\n+        -webkit-text-stroke-color: #ffc853;\n+        color: transparent;\n+        margin-top: 25px;\n+        margin-bottom: 25px;\n+      }\n+      p{\n+        line-height: 25px;\n+        font-size: 15px;\n+        font-weight: 400;\n+        text-align: center;\n+        color:#eeeeee\n+      }\n     }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1632491482981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n .header {\n-    height: 245px;\n+    height:fit-content;\n     position: fixed;\n     z-index: 9999;\n     width: 100%;\n     background-size: cover;\n"
+                },
+                {
+                    "date": 1632491500366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n .header {\n-    height:fit-content;\n+    height:max-content;\n     position: fixed;\n     z-index: 9999;\n     width: 100%;\n     background-size: cover;\n"
+                },
+                {
+                    "date": 1632491540654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n .header {\n-    height:max-content;\n+    min-height:250px;\n     position: fixed;\n     z-index: 9999;\n     width: 100%;\n     background-size: cover;\n"
+                },
+                {
+                    "date": 1632491934034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,21 @@\n     align-items: center;\n     height: 100px;\n     border-bottom: 1px solid #ccc;\n   }\n+  &__transfer-text{\n+    line-height: 26px;\n+    font-size: 16px;\n+    display: flex;\n+    span{\n+\n+    }\n+    a{\n+      color:#f8b119\n+    }\n+  }\n+\n+\n   &__left{ \n     display: flex;\n    }\n   &__logo-img{\n"
+                },
+                {
+                    "date": 1632492092691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,17 +13,20 @@\n     height: 100px;\n     border-bottom: 1px solid #ccc;\n   }\n   &__transfer-text{\n-    line-height: 26px;\n-    font-size: 16px;\n-    display: flex;\n+   \n     span{\n-\n+      line-height: 26px;\n+      font-size: 16px;\n+      display: flex;\n+      white-space: nowrap;\n+      \n+      a{\n+        color:#f8b119\n+      }\n     }\n-    a{\n-      color:#f8b119\n-    }\n+   \n   }\n \n \n   &__left{ \n"
+                },
+                {
+                    "date": 1632492113846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       line-height: 26px;\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n-      \n+      color:#fff;\n       a{\n         color:#f8b119\n       }\n     }\n"
+                },
+                {
+                    "date": 1632492132879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     height: 100px;\n     border-bottom: 1px solid #ccc;\n   }\n   &__transfer-text{\n-   \n+    background: #000000;\n     span{\n       line-height: 26px;\n       font-size: 16px;\n       display: flex;\n"
+                },
+                {
+                    "date": 1632492192571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n     border-bottom: 1px solid #ccc;\n   }\n   &__transfer-text{\n     background: #000000;\n+    height: 36px;\n+    line-height: 36px;\n     span{\n       line-height: 26px;\n       font-size: 16px;\n       display: flex;\n"
+                },
+                {
+                    "date": 1632492217913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,11 @@\n   }\n   &__transfer-text{\n     background: #000000;\n     height: 36px;\n-    line-height: 36px;\n+    \n     span{\n-      line-height: 26px;\n+      line-height: 36px;\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n       color:#fff;\n"
+                },
+                {
+                    "date": 1632492270807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,16 +15,21 @@\n   }\n   &__transfer-text{\n     background: #000000;\n     height: 36px;\n-    \n+    display: flex;\n+    align-items: center;\n+\n     span{\n-      line-height: 36px;\n+      display: block;\n+      line-height: 26px;\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n       color:#fff;\n       a{\n+        display: block;\n+\n         color:#f8b119\n       }\n     }\n    \n"
+                },
+                {
+                    "date": 1632492287857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n       color:#fff;\n+      margin-right: 15px;\n       a{\n         display: block;\n \n         color:#f8b119\n"
+                },
+                {
+                    "date": 1632492329862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,12 @@\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n       color:#fff;\n-      margin-right: 15px;\n+     \n       a{\n         display: block;\n+        margin-left: 15px ;\n \n         color:#f8b119\n       }\n     }\n"
+                },
+                {
+                    "date": 1632492583695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\n+@import \"../../utils/home\";\n .header {\n     min-height:250px;\n     position: fixed;\n     z-index: 9999;\n"
+                },
+                {
+                    "date": 1632492638011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n       color:#fff;\n+      animation:transferText .2s infinite\n      \n       a{\n         display: block;\n         margin-left: 15px ;\n"
+                },
+                {
+                    "date": 1632492671646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,11 @@\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n       color:#fff;\n+      position: relative;\n       animation:transferText .2s infinite\n+      \n      \n       a{\n         display: block;\n         margin-left: 15px ;\n"
+                },
+                {
+                    "date": 1632492857045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n     display: flex;\n     align-items: center;\n \n     span{\n-      display: block;\n       line-height: 26px;\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n"
+                },
+                {
+                    "date": 1632492992283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n       display: flex;\n       white-space: nowrap;\n       color:#fff;\n       position: relative;\n-      animation:transferText .2s infinite\n+      transform: translateX(100%);\n+      animation:transferText .2s linear infinite\n       \n      \n       a{\n         display: block;\n"
+                },
+                {
+                    "date": 1632493077043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,16 @@\n     background: #000000;\n     height: 36px;\n     display: flex;\n     align-items: center;\n+    overflow: hidden;\n+            position: relative\n \n     span{\n+      position: absolute;\n+      width: 100%;\n+      height: 100%;\n+      margin: 0;\n       line-height: 26px;\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n"
+                },
+                {
+                    "date": 1632493106006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     height: 36px;\n     display: flex;\n     align-items: center;\n     overflow: hidden;\n-            position: relative\n+     position: relative\n \n     span{\n       position: absolute;\n       width: 100%;\n@@ -32,9 +32,9 @@\n       white-space: nowrap;\n       color:#fff;\n       position: relative;\n       transform: translateX(100%);\n-      animation:transferText .2s linear infinite\n+      animation: transferText 0.2s linear infinite\n       \n      \n       a{\n         display: block;\n"
+                },
+                {
+                    "date": 1632493168320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n       font-size: 16px;\n       display: flex;\n       white-space: nowrap;\n       color:#fff;\n-      position: relative;\n+     \n       transform: translateX(100%);\n       animation: transferText 0.2s linear infinite\n       \n      \n"
+                },
+                {
+                    "date": 1632493308466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,36 +15,38 @@\n   }\n   &__transfer-text{\n     background: #000000;\n     height: 36px;\n-    display: flex;\n+   \n     align-items: center;\n     overflow: hidden;\n      position: relative\n \n     span{\n-      position: absolute;\n-      width: 100%;\n-      height: 100%;\n-      margin: 0;\n-      line-height: 26px;\n-      font-size: 16px;\n-      display: flex;\n-      white-space: nowrap;\n-      color:#fff;\n-     \n-      transform: translateX(100%);\n-      animation: transferText 0.2s linear infinite\n+\n+            position: absolute;\n+            width: 100%;\n+            height: 100%;\n+            margin: 0;\n+            line-height: 50px;\n+            text-align: center;\n+            -moz-transform: translateX(100%);\n+            -webkit-transform: translateX(100%);\n+            transform: translateX(100%);\n+            -moz-animation: scroll-left 2s linear infinite;\n+            -webkit-animation: scroll-left 2s linear infinite;\n+            animation: scroll-left 20s linear infinite;\n+\n       \n      \n-      a{\n-        display: block;\n-        margin-left: 15px ;\n+     \n+    }\n+    &__transfer-text a{\n+        \n+      margin-left: 15px ;\n \n-        color:#f8b119\n-      }\n+      color:#f8b119\n     }\n-   \n   }\n \n \n   &__left{ \n"
+                },
+                {
+                    "date": 1632493364616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n     height: 36px;\n    \n     align-items: center;\n     overflow: hidden;\n-     position: relative\n+     position: relative;\n+     color:#fff;\n \n     span{\n \n             position: absolute;\n"
+                },
+                {
+                    "date": 1632493394391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     align-items: center;\n     overflow: hidden;\n      position: relative;\n      color:#fff;\n-\n+    line-height: 36px;\n     span{\n \n             position: absolute;\n             width: 100%;\n"
+                },
+                {
+                    "date": 1632493411560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,16 +20,16 @@\n     align-items: center;\n     overflow: hidden;\n      position: relative;\n      color:#fff;\n-    line-height: 36px;\n+    \n     span{\n \n             position: absolute;\n             width: 100%;\n             height: 100%;\n             margin: 0;\n-            line-height: 50px;\n+            line-height: 36px;\n             text-align: center;\n             -moz-transform: translateX(100%);\n             -webkit-transform: translateX(100%);\n             transform: translateX(100%);\n"
+                },
+                {
+                    "date": 1632493421026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     }\n     &__transfer-text a{\n         \n       margin-left: 15px ;\n-\n+      position: relative;\n       color:#f8b119\n     }\n   }\n \n"
+                },
+                {
+                    "date": 1632493432515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,8 @@\n     }\n     &__transfer-text a{\n         \n       margin-left: 15px ;\n-      position: relative;\n       color:#f8b119\n     }\n   }\n \n"
+                },
+                {
+                    "date": 1632493456973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,10 @@\n      \n     }\n     &__transfer-text a{\n         \n-      margin-left: 15px ;\n-      color:#f8b119\n+      \n+      color:#f8b119 !important\n     }\n   }\n \n \n"
+                },
+                {
+                    "date": 1632493478541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n       \n      \n      \n     }\n-    &__transfer-text a{\n+    &__transfer-text span a{\n         \n       \n       color:#f8b119 !important\n     }\n"
+                },
+                {
+                    "date": 1632493514720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,18 +35,18 @@\n             transform: translateX(100%);\n             -moz-animation: scroll-left 2s linear infinite;\n             -webkit-animation: scroll-left 2s linear infinite;\n             animation: scroll-left 20s linear infinite;\n-\n+            a{\n+        \n       \n+              color:#f8b119 !important\n+            }\n+      \n      \n      \n     }\n-    &__transfer-text span a{\n-        \n-      \n-      color:#f8b119 !important\n-    }\n+   \n   }\n \n \n   &__left{ \n"
+                },
+                {
+                    "date": 1632493528820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n             -webkit-transform: translateX(100%);\n             transform: translateX(100%);\n             -moz-animation: scroll-left 2s linear infinite;\n             -webkit-animation: scroll-left 2s linear infinite;\n-            animation: scroll-left 20s linear infinite;\n+            animation: scroll-left 30s linear infinite;\n             a{\n         \n       \n               color:#f8b119 !important\n"
+                },
+                {
+                    "date": 1632493544913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             -webkit-animation: scroll-left 2s linear infinite;\n             animation: scroll-left 30s linear infinite;\n             a{\n         \n-      \n+              margin-left: 15px;\n               color:#f8b119 !important\n             }\n       \n      \n"
+                },
+                {
+                    "date": 1632493718252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,16 +3,17 @@\n     min-height:250px;\n     position: fixed;\n     z-index: 9999;\n     width: 100%;\n-    background-size: cover;\n-    background-repeat: no-repeat;\n+   \n   &__wrapper{\n     display: flex;\n     justify-content:center;\n     align-items: center;\n     height: 100px;\n     border-bottom: 1px solid #ccc;\n+    background-size: cover;\n+    background-repeat: no-repeat;\n   }\n   &__transfer-text{\n     background: #000000;\n     height: 36px;\n@@ -104,9 +105,9 @@\n         text-align: center;\n         -webkit-text-stroke-width: 1px;\n         -webkit-text-stroke-color: #ffc853;\n         color: transparent;\n-        margin-top: 25px;\n+        margin-top: 20px;\n         margin-bottom: 25px;\n       }\n       p{\n         line-height: 25px;\n"
+                },
+                {
+                    "date": 1632493875193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,11 @@\n    &__right{\n       margin-right: 20px;\n     }\n    &__login--btn{\n-    padding:12px 15px;\n+    height: 45px;\n+    line-height: 45px;\n+    padding: 0 15px;\n     background-color: #ffbb16;\n     outline: none;\n     color:white;\n     text-transform:uppercase;\n"
+                },
+                {
+                    "date": 1632494078024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n   }\n   &__transfer-text{\n     background: #000000;\n     height: 36px;\n-   \n+    \n     align-items: center;\n     overflow: hidden;\n      position: relative;\n      color:#fff;\n@@ -39,9 +39,11 @@\n             animation: scroll-left 30s linear infinite;\n             a{\n         \n               margin-left: 15px;\n-              color:#f8b119 !important\n+              color:#f8b119 !important;\n+              text-decoration: none;\n+              \n             }\n       \n      \n      \n"
+                },
+                {
+                    "date": 1632494169551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     display: flex;\n     justify-content:center;\n     align-items: center;\n     height: 100px;\n-    border-bottom: 1px solid #ccc;\n+    border-bottom: 1px solid rgba(255,255,255,.1);\n     background-size: cover;\n     background-repeat: no-repeat;\n   }\n   &__transfer-text{\n"
+                },
+                {
+                    "date": 1632494261640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,9 @@\n     border-radius: 50px;\n     margin: 0 4px ;\n     font-weight:700;\n     font-size: 14px;\n+    box-shadow: 0 0 51px -7px rgb(255,185,22);\n     }\n     &__brand {\n       h1{\n \n"
+                },
+                {
+                    "date": 1632494373083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,15 @@\n     margin: 0 4px ;\n     font-weight:700;\n     font-size: 14px;\n     box-shadow: 0 0 51px -7px rgb(255,185,22);\n+    border: 1px solid #ffbb16 ;\n+    transition: .3s linear;\n+    &:hover{\n+      background-color: #000000;\n+      color:#ffbb16;\n     }\n+  }\n     &__brand {\n       h1{\n \n         font-size: 35px;\n"
+                },
+                {
+                    "date": 1632494430660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,8 +75,11 @@\n   }\n   &__menu--item{ \n     padding: 10px 0;\n     margin: 0 10px;\n+    &:hover{\n+      color:#ffbb16\n+    }\n \n   }\n   &__menu--link{\n     color: white;\n@@ -104,8 +107,9 @@\n     transition: .3s linear;\n     &:hover{\n       background-color: #000000;\n       color:#ffbb16;\n+      cursor: pointer;\n     }\n   }\n     &__brand {\n       h1{\n"
+                },
+                {
+                    "date": 1632494460729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n   &__logo-img{\n       display: block;\n       width: 170px;\n       height: auto;\n+      cursor:pointer\n \n \n    }\n   &__logo-label{ }\n@@ -76,9 +77,9 @@\n   &__menu--item{ \n     padding: 10px 0;\n     margin: 0 10px;\n     &:hover{\n-      color:#ffbb16\n+      color:#ffbb16;\n     }\n \n   }\n   &__menu--link{\n"
+                },
+                {
+                    "date": 1632495831391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n @import \"../../utils/home\";\n .header {\n     min-height:250px;\n-    position: fixed;\n     z-index: 9999;\n     width: 100%;\n    \n   &__wrapper{\n@@ -58,9 +57,9 @@\n   &__logo-img{\n       display: block;\n       width: 170px;\n       height: auto;\n-      cursor:pointer\n+      cursor:pointer;\n \n \n    }\n   &__logo-label{ }\n"
+                },
+                {
+                    "date": 1632497724125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n             animation: scroll-left 30s linear infinite;\n             a{\n         \n               margin-left: 15px;\n-              color:#f8b119 !important;\n+              color:$color-main  !important;\n               text-decoration: none;\n               \n             }\n       \n@@ -76,9 +76,9 @@\n   &__menu--item{ \n     padding: 10px 0;\n     margin: 0 10px;\n     &:hover{\n-      color:#ffbb16;\n+      color:$color-main ;\n     }\n \n   }\n   &__menu--link{\n@@ -92,23 +92,23 @@\n    &__login--btn{\n     height: 45px;\n     line-height: 45px;\n     padding: 0 15px;\n-    background-color: #ffbb16;\n+    background-color: $color-main ;\n     outline: none;\n     color:white;\n     text-transform:uppercase;\n     border: none;\n     border-radius: 50px;\n     margin: 0 4px ;\n     font-weight:700;\n     font-size: 14px;\n-    box-shadow: 0 0 51px -7px rgb(255,185,22);\n-    border: 1px solid #ffbb16 ;\n+    box-shadow: 0 0 51px -7px rgb(255, 185, 22);\n+    border: 1px solid $color-main  ;\n     transition: .3s linear;\n     &:hover{\n       background-color: #000000;\n-      color:#ffbb16;\n+      color:$color-main ;\n       cursor: pointer;\n     }\n   }\n     &__brand {\n@@ -118,9 +118,9 @@\n         line-height: 40px;\n         font-weight: 700;\n         text-align: center;\n         -webkit-text-stroke-width: 1px;\n-        -webkit-text-stroke-color: #ffc853;\n+        -webkit-text-stroke-color: $color-main ;\n         color: transparent;\n         margin-top: 20px;\n         margin-bottom: 25px;\n       }\n"
+                },
+                {
+                    "date": 1632586388513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,11 @@\n   &__menu--link{\n     color: white;\n     text-decoration: none;\n     text-transform: uppercase;\n+    &:hover{\n+      color: $color-main;\n+    }\n    }\n    &__right{\n       margin-right: 20px;\n     }\n"
+                },
+                {
+                    "date": 1632621743016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,9 +123,9 @@\n         text-align: center;\n         -webkit-text-stroke-width: 1px;\n         -webkit-text-stroke-color: $color-main ;\n         color: transparent;\n-        margin-top: 20px;\n+      padding-top: 20px;\n         margin-bottom: 25px;\n       }\n       p{\n         line-height: 25px;\n"
+                },
+                {
+                    "date": 1632627115363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,12 @@\n     border-bottom: 1px solid rgba(255,255,255,.1);\n     background-size: cover;\n     background-repeat: no-repeat;\n   }\n+  &__wrapper.isDisplayHeader{\n+    position: fixed;\n+    background-color: #000;\n+  }\n   &__transfer-text{\n     background: #000000;\n     height: 36px;\n     \n"
+                },
+                {
+                    "date": 1632627130495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n   }\n   &__wrapper.isDisplayHeader{\n     position: fixed;\n     background-color: #000;\n+    width: 100%;\n   }\n   &__transfer-text{\n     background: #000000;\n     height: 36px;\n"
+                },
+                {
+                    "date": 1632627385099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n   &__wrapper.isDisplayHeader{\n     position: fixed;\n     background-color: #000;\n     width: 100%;\n+    top:0;\n   }\n   &__transfer-text{\n     background: #000000;\n     height: 36px;\n"
+                },
+                {
+                    "date": 1632627559896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,17 +20,17 @@\n     top:0;\n   }\n   &__transfer-text{\n     background: #000000;\n-    height: 36px;\n+   \n     \n     align-items: center;\n     overflow: hidden;\n      position: relative;\n      color:#fff;\n     \n     span{\n-\n+      height: 36px;\n             position: absolute;\n             width: 100%;\n             height: 100%;\n             margin: 0;\n"
+                },
+                {
+                    "date": 1632627791106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n      position: relative;\n      color:#fff;\n     \n     span{\n-      height: 36px;\n-            position: absolute;\n+            height: 36px;\n+            // position: absolute;\n             width: 100%;\n             height: 100%;\n             margin: 0;\n             line-height: 36px;\n"
+                },
+                {
+                    "date": 1632628060784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     border-bottom: 1px solid rgba(255,255,255,.1);\n     background-size: cover;\n     background-repeat: no-repeat;\n   }\n-  &__wrapper.isDisplayHeader{\n+  &__container.isDisplayHeader{\n     position: fixed;\n     background-color: #000;\n     width: 100%;\n     top:0;\n"
+                },
+                {
+                    "date": 1632628140552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     background-repeat: no-repeat;\n   }\n   &__container.isDisplayHeader{\n     position: fixed;\n-    background-color: #000;\n+    background-color:#1b1a18;\n     width: 100%;\n     top:0;\n   }\n   &__transfer-text{\n"
+                },
+                {
+                    "date": 1632628213755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,44 +18,9 @@\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n   }\n-  &__transfer-text{\n-    background: #000000;\n-   \n-    \n-    align-items: center;\n-    overflow: hidden;\n-     position: relative;\n-     color:#fff;\n-    \n-    span{\n-            height: 36px;\n-            // position: absolute;\n-            width: 100%;\n-            height: 100%;\n-            margin: 0;\n-            line-height: 36px;\n-            text-align: center;\n-            -moz-transform: translateX(100%);\n-            -webkit-transform: translateX(100%);\n-            transform: translateX(100%);\n-            -moz-animation: scroll-left 2s linear infinite;\n-            -webkit-animation: scroll-left 2s linear infinite;\n-            animation: scroll-left 30s linear infinite;\n-            a{\n-        \n-              margin-left: 15px;\n-              color:$color-main  !important;\n-              text-decoration: none;\n-              \n-            }\n-      \n-     \n-     \n-    }\n-   \n-  }\n+ \n \n \n   &__left{ \n     display: flex;\n"
+                },
+                {
+                    "date": 1632628311285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,17 +12,39 @@\n     border-bottom: 1px solid rgba(255,255,255,.1);\n     background-size: cover;\n     background-repeat: no-repeat;\n   }\n+  &__container{\n+    span{\n+      height: 36px;\n+     \n+      width: 100%;\n+      height: 100%;\n+      margin: 0;\n+      line-height: 36px;\n+      text-align: center;\n+      \n+      a{\n+  \n+        margin-left: 15px;\n+        color:$color-main  !important;\n+        text-decoration: none;\n+        \n+      }\n+\n+\n+\n+}\n+  }\n   &__container.isDisplayHeader{\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n   }\n- \n \n \n+\n   &__left{ \n     display: flex;\n    }\n   &__logo-img{\n"
+                },
+                {
+                    "date": 1632628354083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     background-size: cover;\n     background-repeat: no-repeat;\n   }\n   &__container{\n-    span{\n+   marquee{\n       height: 36px;\n      \n       width: 100%;\n       height: 100%;\n"
+                },
+                {
+                    "date": 1632628380191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,15 +14,15 @@\n     background-repeat: no-repeat;\n   }\n   &__container{\n    marquee{\n-      height: 36px;\n+      // height: 36px;\n      \n-      width: 100%;\n-      height: 100%;\n-      margin: 0;\n-      line-height: 36px;\n-      text-align: center;\n+      // width: 100%;\n+      // height: 100%;\n+      // margin: 0;\n+      // line-height: 36px;\n+      // text-align: center;\n       \n       a{\n   \n         margin-left: 15px;\n"
+                },
+                {
+                    "date": 1632628399729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n     background-repeat: no-repeat;\n   }\n   &__container{\n    marquee{\n-      // height: 36px;\n+      height: 36px;\n      \n-      // width: 100%;\n-      // height: 100%;\n+      width: 100%;\n+      height: 100%;\n       // margin: 0;\n-      // line-height: 36px;\n+      line-height: 36px;\n       // text-align: center;\n       \n       a{\n   \n"
+                },
+                {
+                    "date": 1632628415250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   }\n   &__container{\n    marquee{\n       height: 36px;\n-     \n+     color:#0000;\n       width: 100%;\n       height: 100%;\n       // margin: 0;\n       line-height: 36px;\n"
+                },
+                {
+                    "date": 1632628425043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   }\n   &__container{\n    marquee{\n       height: 36px;\n-     color:#0000;\n+     color:white;\n       width: 100%;\n       height: 100%;\n       // margin: 0;\n       line-height: 36px;\n"
+                },
+                {
+                    "date": 1632628443257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n   }\n   &__container{\n    marquee{\n       height: 36px;\n+      background-color: #0000;\n      color:white;\n       width: 100%;\n       height: 100%;\n       // margin: 0;\n"
+                },
+                {
+                    "date": 1632628470965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,9 @@\n     background-repeat: no-repeat;\n   }\n   &__container{\n    marquee{\n-      height: 36px;\n-      background-color: #0000;\n+      \n      color:white;\n       width: 100%;\n       height: 100%;\n       // margin: 0;\n"
+                },
+                {
+                    "date": 1632628562266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,28 +13,32 @@\n     background-size: cover;\n     background-repeat: no-repeat;\n   }\n   &__container{\n-   marquee{\n+    .marquee{\n+      background-color: #000;\n+      marquee{\n       \n-     color:white;\n-      width: 100%;\n-      height: 100%;\n-      // margin: 0;\n-      line-height: 36px;\n-      // text-align: center;\n-      \n-      a{\n+        color:white;\n+         width: 100%;\n+         height: 100%;\n+         // margin: 0;\n+         line-height: 36px;\n+         // text-align: center;\n+         \n+         a{\n+     \n+           margin-left: 15px;\n+           color:$color-main  !important;\n+           text-decoration: none;\n+           \n+         }\n+   \n+   \n+   \n+   }\n+    }\n   \n-        margin-left: 15px;\n-        color:$color-main  !important;\n-        text-decoration: none;\n-        \n-      }\n-\n-\n-\n-}\n   }\n   &__container.isDisplayHeader{\n     position: fixed;\n     background-color:#1b1a18;\n"
+                },
+                {
+                    "date": 1632628708211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,12 @@\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n+    &__wrapper{\n+      height: 80px;\n+    }\n+\n   }\n \n \n \n"
+                },
+                {
+                    "date": 1632636619749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,11 +43,9 @@\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n-    &__wrapper{\n-      height: 80px;\n-    }\n+    \n \n   }\n \n \n"
+                },
+                {
+                    "date": 1632636773881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,14 +43,21 @@\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n-    \n+    animation: slide-down 3s linear;\n \n   }\n+  @keyframes slide-down {\n+    0%{\n+      transform: translateY(-100%);\n+    } 100%{\n+      transform: translateY(0%);\n+    }\n+    \n+  }\n \n \n-\n   &__left{ \n     display: flex;\n    }\n   &__logo-img{\n"
+                },
+                {
+                    "date": 1632636785775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,12 +43,12 @@\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n-    animation: slide-down 3s linear;\n+    animation: slideDown 3s linear;\n \n   }\n-  @keyframes slide-down {\n+  @keyframes slideDown {\n     0%{\n       transform: translateY(-100%);\n     } 100%{\n       transform: translateY(0%);\n"
+                },
+                {
+                    "date": 1632636812071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n-    animation: slideDown 3s linear;\n+    animation: slideDown .3s linear;\n \n   }\n   @keyframes slideDown {\n     0%{\n"
+                },
+                {
+                    "date": 1632636829039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n-    animation: slideDown .3s linear;\n+    animation: slideDown 1s linear;\n \n   }\n   @keyframes slideDown {\n     0%{\n"
+                },
+                {
+                    "date": 1632636852394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n-    animation: slideDown 1s linear;\n+    animation: slideDown .8s linear;\n \n   }\n   @keyframes slideDown {\n     0%{\n"
+                },
+                {
+                    "date": 1632636934171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     position: fixed;\n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n-    animation: slideDown .8s linear;\n+    animation: slideDown .5s linear;\n \n   }\n   @keyframes slideDown {\n     0%{\n"
+                },
+                {
+                    "date": 1632637006192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     }\n   \n   }\n   &__container.isDisplayHeader{\n-    position: fixed;\n+   \n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n     animation: slideDown .5s linear;\n@@ -50,8 +50,9 @@\n   @keyframes slideDown {\n     0%{\n       transform: translateY(-100%);\n     } 100%{\n+      position: fixed;\n       transform: translateY(0%);\n     }\n     \n   }\n"
+                },
+                {
+                    "date": 1632637023932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n     }\n   \n   }\n   &__container.isDisplayHeader{\n+    position: fixed;\n    \n     background-color:#1b1a18;\n     width: 100%;\n     top:0;\n@@ -50,9 +51,8 @@\n   @keyframes slideDown {\n     0%{\n       transform: translateY(-100%);\n     } 100%{\n-      position: fixed;\n       transform: translateY(0%);\n     }\n     \n   }\n"
+                },
+                {
+                    "date": 1632637203978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n .header {\n     min-height:250px;\n     z-index: 9999;\n     width: 100%;\n+    padding-bottom: 40px;\n    \n   &__wrapper{\n     display: flex;\n     justify-content:center;\n"
+                },
+                {
+                    "date": 1632645759580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,14 +81,32 @@\n     list-style: none;\n     \n   }\n   &__menu--item{ \n+    position: relative;\n     padding: 10px 0;\n     margin: 0 10px;\n     &:hover{\n       color:$color-main ;\n     }\n+    .menu {\n+      &__sub{\n+        position: absolute;\n+        background-color: #000;\n+        height: fit-content;\n \n+       }\n+      &__sub--item{\n+\n+       }\n+      &__sub--link{ \n+        color: white;\n+    text-decoration: none;\n+    text-transform: uppercase;\n+      }\n+    }\n+\n+\n   }\n   &__menu--link{\n     color: white;\n     text-decoration: none;\n"
+                },
+                {
+                    "date": 1632645790019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,8 +92,9 @@\n       &__sub{\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n+        list-style: none;\n \n        }\n       &__sub--item{\n \n"
+                },
+                {
+                    "date": 1632645800828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,8 +93,9 @@\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n         list-style: none;\n+        width: 100%;\n \n        }\n       &__sub--item{\n \n"
+                },
+                {
+                    "date": 1632645888299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,8 +94,9 @@\n         background-color: #000;\n         height: fit-content;\n         list-style: none;\n         width: 100%;\n+        padding:10px\n \n        }\n       &__sub--item{\n \n@@ -103,8 +104,9 @@\n       &__sub--link{ \n         color: white;\n     text-decoration: none;\n     text-transform: uppercase;\n+    line-height: 30px;\n       }\n     }\n \n \n"
+                },
+                {
+                    "date": 1632645953278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,11 +111,12 @@\n \n \n   }\n   &__menu--link{\n-    color: white;\n-    text-decoration: none;\n+    color: #fff;\n+    font-weight: 700;\n     text-transform: uppercase;\n+    padding: 12px 15px;\n     &:hover{\n       color: $color-main;\n     }\n    }\n"
+                },
+                {
+                    "date": 1632645980196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,8 +115,9 @@\n     color: #fff;\n     font-weight: 700;\n     text-transform: uppercase;\n     padding: 12px 15px;\n+    text-decoration: none;\n     &:hover{\n       color: $color-main;\n     }\n    }\n"
+                },
+                {
+                    "date": 1632646004188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n         list-style: none;\n-        width: 100%;\n+        width: 120%;\n         padding:10px\n \n        }\n       &__sub--item{\n"
+                },
+                {
+                    "date": 1632646126014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,20 +94,22 @@\n         background-color: #000;\n         height: fit-content;\n         list-style: none;\n         width: 120%;\n-        padding:10px\n+        padding:10px;\n+        padding-bottom:20px;\n \n+\n        }\n       &__sub--item{\n \n        }\n       &__sub--link{ \n         color: white;\n-    text-decoration: none;\n-    text-transform: uppercase;\n-    line-height: 30px;\n-      }\n+        text-decoration: none;\n+        text-transform: uppercase;\n+        line-height: 35px;\n+         }\n     }\n \n \n   }\n"
+                },
+                {
+                    "date": 1632646138117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n         list-style: none;\n-        width: 120%;\n+        width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n \n \n"
+                },
+                {
+                    "date": 1632646152121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,9 @@\n         list-style: none;\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n+        right: 0;\n \n \n        }\n       &__sub--item{\n"
+                },
+                {
+                    "date": 1632646173849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n         list-style: none;\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n-        right: 0;\n+        left:15px;\n \n \n        }\n       &__sub--item{\n"
+                },
+                {
+                    "date": 1632646333287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,11 @@\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n         left:15px;\n+        visibility: hidden;\n+        opacity: 0;\n+        transition: .2s linear;\n \n \n        }\n       &__sub--item{\n@@ -110,10 +113,13 @@\n         text-transform: uppercase;\n         line-height: 35px;\n          }\n     }\n+    &:hover .menu__sub{\n+      visibility: visible;\n+      opacity: 1;\n+    }\n \n-\n   }\n   &__menu--link{\n     color: #fff;\n     font-weight: 700;\n"
+                },
+                {
+                    "date": 1632646401600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,8 +111,11 @@\n         color: white;\n         text-decoration: none;\n         text-transform: uppercase;\n         line-height: 35px;\n+        &:hover{\n+          color:$color-main\n+        }\n          }\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n"
+                },
+                {
+                    "date": 1632646430603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,8 +92,9 @@\n       &__sub{\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n+        overflow: hidden;\n         list-style: none;\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n"
+                },
+                {
+                    "date": 1632646459701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,17 +84,18 @@\n   &__menu--item{ \n     position: relative;\n     padding: 10px 0;\n     margin: 0 10px;\n+    overflow: hidden;\n+\n     &:hover{\n       color:$color-main ;\n     }\n     .menu {\n       &__sub{\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n-        overflow: hidden;\n         list-style: none;\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n"
+                },
+                {
+                    "date": 1632646513620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n   &__menu--item{ \n     position: relative;\n     padding: 10px 0;\n     margin: 0 10px;\n-    overflow: hidden;\n+  \n \n     &:hover{\n       color:$color-main ;\n     }\n@@ -102,8 +102,9 @@\n         left:15px;\n         visibility: hidden;\n         opacity: 0;\n         transition: .2s linear;\n+        transform: translateY(-100%);\n \n \n        }\n       &__sub--item{\n"
+                },
+                {
+                    "date": 1632646536124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,8 +122,9 @@\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n       opacity: 1;\n+      transform: translateY(0);\n     }\n \n   }\n   &__menu--link{\n"
+                },
+                {
+                    "date": 1632646563034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n         list-style: none;\n+        top:0\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n         left:15px;\n"
+                },
+                {
+                    "date": 1632646665958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n         list-style: none;\n-        top:0\n+       top:100px;\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n         left:15px;\n"
+                },
+                {
+                    "date": 1632646700508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,9 @@\n         left:15px;\n         visibility: hidden;\n         opacity: 0;\n         transition: .2s linear;\n-        transform: translateY(-100%);\n+        // transform: translateY(-100%);\n \n \n        }\n       &__sub--item{\n@@ -123,9 +123,8 @@\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n       opacity: 1;\n-      transform: translateY(0);\n     }\n \n   }\n   &__menu--link{\n"
+                },
+                {
+                    "date": 1632646726892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,17 +95,17 @@\n         position: absolute;\n         background-color: #000;\n         height: fit-content;\n         list-style: none;\n-       top:100px;\n+       \n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n         left:15px;\n         visibility: hidden;\n         opacity: 0;\n         transition: .2s linear;\n-        // transform: translateY(-100%);\n+        transform: translateY(0);\n \n \n        }\n       &__sub--item{\n@@ -123,8 +123,9 @@\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n       opacity: 1;\n+      transform: translateY(0);\n     }\n \n   }\n   &__menu--link{\n"
+                },
+                {
+                    "date": 1632646736236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,9 +123,9 @@\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n       opacity: 1;\n-      transform: translateY(0);\n+      transform: translateY(100%);\n     }\n \n   }\n   &__menu--link{\n"
+                },
+                {
+                    "date": 1632646763191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,9 +123,9 @@\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n       opacity: 1;\n-      transform: translateY(100%);\n+      transform: translateY(1);\n     }\n \n   }\n   &__menu--link{\n"
+                },
+                {
+                    "date": 1632646781222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,9 +123,9 @@\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n       opacity: 1;\n-      transform: translateY(1);\n+      transform: translateY(12px);\n     }\n \n   }\n   &__menu--link{\n"
+                },
+                {
+                    "date": 1632646811076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,9 +102,9 @@\n         padding-bottom:20px;\n         left:15px;\n         visibility: hidden;\n         opacity: 0;\n-        transition: .2s linear;\n+        transition: .5s linear;\n         transform: translateY(0);\n \n \n        }\n@@ -123,9 +123,9 @@\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n       opacity: 1;\n-      transform: translateY(12px);\n+      transform: translateY(5px);\n     }\n \n   }\n   &__menu--link{\n"
+                },
+                {
+                    "date": 1632646860008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,9 +102,9 @@\n         padding-bottom:20px;\n         left:15px;\n         visibility: hidden;\n         opacity: 0;\n-        transition: .5s linear;\n+        transition: .2s linear;\n         transform: translateY(0);\n \n \n        }\n"
+                },
+                {
+                    "date": 1632646887544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,10 +101,10 @@\n         padding:10px;\n         padding-bottom:20px;\n         left:15px;\n         visibility: hidden;\n-        opacity: 0;\n-        transition: .2s linear;\n+        // opacity: 0;\n+        transition: .4s linear;\n         transform: translateY(0);\n \n \n        }\n@@ -122,9 +122,9 @@\n          }\n     }\n     &:hover .menu__sub{\n       visibility: visible;\n-      opacity: 1;\n+      // opacity: 1;\n       transform: translateY(5px);\n     }\n \n   }\n"
+                },
+                {
+                    "date": 1632646910190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,10 +100,10 @@\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n         left:15px;\n-        visibility: hidden;\n-        // opacity: 0;\n+        // visibility: hidden;\n+        opacity: 0;\n         transition: .4s linear;\n         transform: translateY(0);\n \n \n@@ -121,10 +121,10 @@\n         }\n          }\n     }\n     &:hover .menu__sub{\n-      visibility: visible;\n-      // opacity: 1;\n+      // visibility: visible;\n+      opacity: 1;\n       transform: translateY(5px);\n     }\n \n   }\n"
+                },
+                {
+                    "date": 1632646935660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n         width: 110%;\n         padding:10px;\n         padding-bottom:20px;\n         left:15px;\n-        // visibility: hidden;\n+        visibility: hidden;\n         opacity: 0;\n         transition: .4s linear;\n         transform: translateY(0);\n \n@@ -121,9 +121,9 @@\n         }\n          }\n     }\n     &:hover .menu__sub{\n-      // visibility: visible;\n+      visibility: visible;\n       opacity: 1;\n       transform: translateY(5px);\n     }\n \n"
+                }
+            ],
+            "date": 1632409261975,
+            "name": "Commit-0",
+            "content": ".header {\n    display: flex;\n   justify-content:space-betweet;\n  align-item: center;\n\n  &__left{ \n    \n    }\n  &__logo-img{ }\n  &__logo-label{ }\n  &__right{ }\n  &__menu{ }\n  &__menu--list{ }\n  &__menu--item{ }\n  &__menu--link{ }\n}"
+        }
+    ]
+}

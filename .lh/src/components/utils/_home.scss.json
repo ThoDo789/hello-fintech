@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/utils/_home.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1632492583679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1632497568154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-@import './astract';\n\\ No newline at end of file\n+@import './abstract';\n+@import './variable';\n"
+                }
+            ],
+            "date": 1632492583679,
+            "name": "Commit-0",
+            "content": "@import './astract';"
+        }
+    ]
+}

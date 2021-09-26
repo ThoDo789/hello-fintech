@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/components/contansts/image.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1632478981162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1632479235190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import productRelease from \"../../assets/images/productRelease.png\";\n import leaderShip from \"../../assets/images/leadership.png\";\n import team from \"../../assets/images/team.png\";\n \n-const images = {\n+export const images = {\n   LOGO: logo,\n   BG: bg,\n   BANNER: banner,\n   PRODUCT_RELEASE: productRelease,\n"
+                },
+                {
+                    "date": 1632479294774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import logo from \"../../assets/images/logo-2.png\";\n import bg from \"../../assets/images/bg.jpg\";\n import banner from \"../../assets/images/banner.jpg\";\n-import productRelease from \"../../assets/images/productRelease.png\";\n+import productRelease from \"../../assets/images/product-release.png\";\n import leaderShip from \"../../assets/images/leadership.png\";\n import team from \"../../assets/images/team.png\";\n \n export const images = {\n"
+                },
+                {
+                    "date": 1632495415930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,15 @@\n import banner from \"../../assets/images/banner.jpg\";\n import productRelease from \"../../assets/images/product-release.png\";\n import leaderShip from \"../../assets/images/leadership.png\";\n import team from \"../../assets/images/team.png\";\n+import itemImg1 from \"../../assets/images/sponsor-icon-1-2.png\";\n \n export const images = {\n   LOGO: logo,\n   BG: bg,\n   BANNER: banner,\n   PRODUCT_RELEASE: productRelease,\n   LEADER_SHIP: leaderShip,\n   TEAM: team,\n+  ITEM_IMG_1: itemImg1,\n };\n"
+                },
+                {
+                    "date": 1632495710414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,6 +12,6 @@\n   BANNER: banner,\n   PRODUCT_RELEASE: productRelease,\n   LEADER_SHIP: leaderShip,\n   TEAM: team,\n-  ITEM_IMG_1: itemImg1,\n+  ITEM_1: itemImg1,\n };\n"
+                },
+                {
+                    "date": 1632580431996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import logo from \"../../assets/images/logo-2.png\";\n+import logoFooter from \"../../assets/images/logo-3.png\";\n import bg from \"../../assets/images/bg.jpg\";\n import banner from \"../../assets/images/banner.jpg\";\n+import brandImg from \"../../assets/images/footer_logos.jpg\";\n import productRelease from \"../../assets/images/product-release.png\";\n import leaderShip from \"../../assets/images/leadership.png\";\n import team from \"../../assets/images/team.png\";\n import itemImg1 from \"../../assets/images/sponsor-icon-1-2.png\";\n@@ -13,5 +15,7 @@\n   PRODUCT_RELEASE: productRelease,\n   LEADER_SHIP: leaderShip,\n   TEAM: team,\n   ITEM_1: itemImg1,\n+  LOGO_FOOTER: logoFooter,\n+  BRAND_IMG: brandImg,\n };\n"
+                },
+                {
+                    "date": 1632580455317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import logo from \"../../assets/images/logo-2.png\";\n import logoFooter from \"../../assets/images/logo-3.png\";\n import bg from \"../../assets/images/bg.jpg\";\n import banner from \"../../assets/images/banner.jpg\";\n-import brandImg from \"../../assets/images/footer_logos.jpg\";\n+import brandImg from \"../../assets/images/footer_logos.png\";\n import productRelease from \"../../assets/images/product-release.png\";\n import leaderShip from \"../../assets/images/leadership.png\";\n import team from \"../../assets/images/team.png\";\n import itemImg1 from \"../../assets/images/sponsor-icon-1-2.png\";\n"
+                }
+            ],
+            "date": 1632478981162,
+            "name": "Commit-0",
+            "content": "import logo from \"../../assets/images/logo-2.png\";\nimport bg from \"../../assets/images/bg.jpg\";\nimport banner from \"../../assets/images/banner.jpg\";\nimport productRelease from \"../../assets/images/productRelease.png\";\nimport leaderShip from \"../../assets/images/leadership.png\";\nimport team from \"../../assets/images/team.png\";\n\nconst images = {\n  LOGO: logo,\n  BG: bg,\n  BANNER: banner,\n  PRODUCT_RELEASE: productRelease,\n  LEADER_SHIP: leaderShip,\n  TEAM: team,\n};\n"
+        }
+    ]
+}
